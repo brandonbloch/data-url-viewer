@@ -2,6 +2,8 @@
 
 Decode and display various data URL types
 
+![Screenshot of the application](./docs/screenshot.png)
+
 ## Development
 
 To install dependencies:
