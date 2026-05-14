@@ -1,6 +1,6 @@
 import './index.css';
 import { DataType, getDataUrlType, parseDataUrlText } from '@/utils.ts';
-import { useMemo, useRef, useState } from 'react';
+import { useMemo, useState } from 'react';
 
 export function App() {
   const [inputValue, setInputValue] = useState('');
