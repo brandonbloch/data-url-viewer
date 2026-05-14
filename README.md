@@ -1,4 +1,8 @@
-# bun-react-template
+# Data URL Viewer
+
+Decode and display various data URL types
+
+## Development
 
 To install dependencies:
 
