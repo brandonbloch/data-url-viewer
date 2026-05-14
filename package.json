@@ -8,6 +8,7 @@
     "url": "https://bloch.ca",
     "email": "brandon@bloch.ca"
   },
+  "homepage": "https://bloch.ca/data-url-viewer",
   "repository": {
     "type": "git",
     "url": "https://github.com/brandonbloch/data-url-viewer.git"
