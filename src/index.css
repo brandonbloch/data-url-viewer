@@ -13,11 +13,18 @@ body {
 }
 
 #main {
+  box-sizing: border-box;
   max-width: 72rem;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 1rem;
 }
 
+@media (min-width: 48rem) {
+  #main {
+    padding: 0 2rem;
+  }
+}
 #input {
   display: block;
   box-sizing: border-box;
