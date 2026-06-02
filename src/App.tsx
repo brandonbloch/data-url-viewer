@@ -24,19 +24,30 @@ export function App() {
   }, [dataType, outputValue]);
 
   return (
-    <div id="main">
-      <h1>Data URL Viewer</h1>
-      <h2><label htmlFor="input">Input</label></h2>
-      <textarea id="input" placeholder="data:text/plain;base64,SGVsbG8sIFdvcmxkIQ==" value={inputValue} onChange={(e) => setInputValue(e.target.value)} />
-      <button id="submit" onClick={viewDataUrl}>View</button>
-      <h2>Output</h2>
-      <div id="output">
-        {dataType === DataType.Image && (
-          <img src={outputValue} alt='Image content of the data URL' />
-        )}
-        {dataType === DataType.Text && (
-          <pre>{outputText}</pre>
-        )}
+    <div className="main">
+      <header className="header">
+        <h1>Data URL Viewer</h1>
+      </header>
+      <div className="columns">
+        <div className="column-left">
+          <textarea id="input"
+                    placeholder="data:text/plain;base64,SGVsbG8sIFdvcmxkIQ=="
+                    aria-label="Input"
+                    value={inputValue}
+                    onChange={(e) => setInputValue(e.target.value)}
+          />
+          <button id="submit" onClick={viewDataUrl}>View</button>
+        </div>
+        <div className="column-right">
+          <div id="output">
+            {dataType === DataType.Image && (
+              <img src={outputValue} alt="Image content of the data URL" />
+            )}
+            {dataType === DataType.Text && (
+              <pre>{outputText}</pre>
+            )}
+          </div>
+        </div>
       </div>
     </div>
   );
