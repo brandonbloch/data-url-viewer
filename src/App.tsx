@@ -1,6 +1,7 @@
 import './index.css';
 import { DataType, getDataUrlType, parseDataUrlText } from '@/utils.ts';
 import { useMemo, useState } from 'react';
+import githubLogo from '@/github.svg';
 
 export function App() {
   const [inputValue, setInputValue] = useState('');
@@ -26,7 +27,13 @@ export function App() {
   return (
     <div className="main">
       <header className="header">
-        <h1>Data URL Viewer</h1>
+        <div className="header-inner">
+          <h1>Data URL Viewer</h1>
+          <a className="github-logo"
+             href="https://github.com/brandonbloch/data-url-viewer"
+             title="View on GitHub"
+             aria-label="View on GitHub"></a>
+        </div>
       </header>
       <div className="columns">
         <div className="column-left">

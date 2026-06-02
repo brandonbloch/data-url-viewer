@@ -19,12 +19,33 @@ body {
 }
 
 .header {
-  border-bottom: solid 1px rgba(255, 255, 255, 0.87);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 0.5rem 1rem;
+  border-bottom: solid 1px rgba(255, 255, 255, 0.87);
+}
+.header .header-inner {
+  flex-grow: 1;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  max-width: 72rem;
 }
 .header h1 {
-  max-width: 72rem;
   margin: 0 auto;
+  flex-grow: 1;
+}
+
+.github-logo {
+  width: 1.75rem;
+  height: 1.75rem;
+  background-color: rgba(255, 255, 255, 0.87);
+  mask: url("./github.svg") no-repeat center/contain;
 }
 
 .columns {
