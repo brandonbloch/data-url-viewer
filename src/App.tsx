@@ -1,7 +1,6 @@
 import './index.css';
 import { DataType, getDataUrlType, parseDataUrlText } from '@/utils.ts';
 import { useMemo, useState } from 'react';
-import githubLogo from '@/github.svg';
 
 export function App() {
   const [inputValue, setInputValue] = useState('');
